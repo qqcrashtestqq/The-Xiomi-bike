@@ -1,0 +1,170 @@
+.price {
+  padding: 50px 0 100px;
+  &__inner {
+    position: relative;
+  }
+  &__form {
+    max-width: 420px;
+  }
+  &__form-title {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #131313;
+    margin-bottom: 41px;
+  }
+  &__form-text {
+    max-width: 300px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    color: #131313;
+    margin-bottom: 29px;
+  }
+  &__form-inpit-text {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    color: #6f6f6f;
+    opacity: 0.5;
+    margin-bottom: 10px;
+  }
+  &__form-input {
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #131313;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    outline: none;
+  }
+  &__form-input::placeholder {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    color: #6f6f6f;
+    opacity: 0.5;
+  }
+
+  &__form-box {
+    display: flex;
+    margin-bottom: 50px;
+  }
+  &__form-label + &__form-label {
+    margin-left: 23px;
+  }
+  &__input-radio:checked + &__form-bike {
+    display: block;
+  }
+  &__input-radio {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+  &__form-bike {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  &__radio-style {
+    border-radius: 30px;
+    width: 80px;
+    height: 12px;
+  }
+  &__radio-style--grey {
+    background: #6f6f6f;
+  }
+  &__radio-style--white {
+    background: #ffffff;
+    border: 1px solid #6f6f6f;
+  }
+  &__radio-style--red {
+    background: #ff4040;
+  }
+  &__btn {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 1.1em;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 28px 81px 28px 81px;
+    background-color: #131313;
+    cursor: pointer;
+  }
+  &__btn:hover {
+    background: #ff4040;
+    transition: all 0.8s;
+  }
+  &__form-bike-price {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    color: #131313;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: -83px;
+    right: 0;
+    width: 220px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid #ff4040;
+  }
+  &__form-bike-price::after {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 100px;
+    border-radius: 100%;
+    border: 1px solid #ff4040;
+    top: 12px;
+    left: 0;
+  }
+}
+// adaptive
+@media (max-width: 1080px) {
+  .price__form-img {
+    max-width: 395px;
+  }
+  .price__form-bike-price {
+    left: -172px;
+  }
+}
+@media (max-width: 857px) {
+  .price__form-img {
+    max-width: 332px;
+  }
+  .price__form-bike-price {
+    left: 34px;
+    top: 216px;
+  }
+}
+@media (max-width: 774px) {
+   .price__form-img {
+    display: none;
+  }
+  .price__form-bike-price {
+    display: none;
+}
+}
+// adaptive

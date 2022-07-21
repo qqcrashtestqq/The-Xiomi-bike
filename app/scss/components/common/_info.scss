@@ -1,0 +1,38 @@
+.info {
+  padding: 150px 0 15px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__subtitle {
+    margin-bottom: 10px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+  }
+  &__text {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    color: #131313;
+    max-width: 450px;
+    margin-bottom: 50px;
+  }
+}
+// adaptive
+@media(max-width: 1089px){
+  .info__inner {
+    display: flex;
+    flex-direction: column;
+  }
+  .info__box {
+    margin-bottom: 50px;
+  }
+}
+
+// adaptive

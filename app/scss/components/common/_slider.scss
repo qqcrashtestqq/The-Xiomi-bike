@@ -1,0 +1,11 @@
+.slider {
+  padding: 150px 0 50px;
+ &__item {
+    padding-left: 50px;
+ }
+}
+.slider__items .slick-dots {
+  top: 0;
+  left: 0;
+}
+

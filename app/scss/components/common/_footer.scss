@@ -1,0 +1,81 @@
+.footer {
+  padding: 43px 0 42px;
+  background-color: #131313;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__text {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: lowercase;
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  &__link + &__link {
+    margin-left: 28px;
+  }
+  &__box {
+    display: flex;
+  }
+  &__social {
+    display: flex;
+    flex-direction: column;
+  }
+  &__phone {
+    margin-bottom: 19px;
+  }
+  &__phone,
+  &__email {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: lowercase;
+    color: #ffffff;
+    position: relative;
+  }
+  &__phone::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -30px;
+    width: 24px;
+    height: 24px;
+    background-image: url('../../../images/footer/footer__phone.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  &__email::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -30px;
+    width: 24px;
+    height: 24px;
+    background-image: url('../../../images/footer/footer__email.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+  }
+}
+// adaptive
+@media (max-width: 574px) {
+  .footer__inner {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__box {
+    margin-bottom: 20px;
+  }
+}
+
+// adaptive
